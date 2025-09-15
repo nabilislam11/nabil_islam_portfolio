@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import professionalPhoto from '@/assets/professional-photo.jpg';
+import developer from '../assets/developer.png'
 
 const AboutSection = () => {
   const skills = [
@@ -27,7 +28,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent">
                 <img
-                  src={professionalPhoto}
+                  src={developer}
                   alt="Nabil Islam - Professional Developer"
                   className="w-full h-full object-cover"
                 />
@@ -63,13 +64,13 @@ const AboutSection = () => {
                 Crafting Digital Experiences Since <span className="text-gradient">2022</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                I'm a passionate MERN Stack Developer who's deeply committed to bringing ideas to life 
-                through thoughtful, user-centered design. Every project I take on is built with care, 
+                I'm a passionate MERN Stack Developer who's deeply committed to bringing ideas to life
+                through thoughtful, user-centered design. Every project I take on is built with care,
                 creativity, and a clear understanding of what the client truly needs.
               </p>
               <p className="text-lg text-muted-foreground">
-                What truly drives me is the satisfaction of solving problems and making a real impact 
-                for the people I work with. I believe in clean code, modern design patterns, and 
+                What truly drives me is the satisfaction of solving problems and making a real impact
+                for the people I work with. I believe in clean code, modern design patterns, and
                 building applications that not only look great but perform exceptionally.
               </p>
             </div>
@@ -85,7 +86,7 @@ const AboutSection = () => {
                       <span className="text-sm text-muted-foreground">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
-                      <div 
+                      <div
                         className="bg-gradient-to-r from-primary to-primary-glow h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       />
