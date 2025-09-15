@@ -22,7 +22,7 @@ const Index = () => {
         <AboutSection />
         <ServicesSection />
         <ProjectsSection />
-        <ReviewsSection />
+        {/* <ReviewsSection /> */}
         <ContactSection />
       </main>
       <footer className="border-t border-border py-8">

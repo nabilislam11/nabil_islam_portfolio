@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Me', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About Me", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -17,12 +17,19 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">N</span>
+          <div className="flex items-center">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-[1px]">
+              <span className="text-primary-foreground font-bold text-lg">
+                N
+              </span>
             </div>
-            <span className="text-xl font-bold">Nabil Islam</span>
-            <span className="text-sm text-muted-foreground hidden sm:block">Code Meets Creativity</span>
+            <span className="text-xl font-bold tracking-[1px] pr-2 ">
+              {" "}
+              <samp className=" text-primary">abil</samp> Islam
+            </span>
+            <span className="text-sm text-muted-foreground hidden sm:block ">
+              Code Meets Creativity
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -37,8 +44,8 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
               Hire Me
@@ -69,8 +76,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground self-start"
               >
                 Hire Me
