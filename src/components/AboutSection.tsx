@@ -71,7 +71,7 @@ const AboutSection = () => {
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 Crafting Digital Experiences Since{" "}
-                <span className="text-gradient">2022</span>
+                <span className="text-gradient">2024</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
                 I'm a passionate MERN Stack Developer who's deeply committed to
