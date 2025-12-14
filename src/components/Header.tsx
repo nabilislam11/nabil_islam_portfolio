@@ -80,7 +80,13 @@ const Header = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground self-start"
               >
-                Hire Me
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/10khDiHD1XZ0ExblQ0l8GRP8TIKM423WI/view?usp=drive_link"
+                >
+                  {" "}
+                  Hire Me
+                </a>
               </Button>
             </div>
           </div>
