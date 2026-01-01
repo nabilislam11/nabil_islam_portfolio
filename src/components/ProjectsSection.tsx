@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import dashboard from "../assets/dashboard.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -20,19 +21,12 @@ const ProjectsSection = () => {
         "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
     },
     {
-      title: "Real-Time Chat Application",
+      title: "Protidin Jonotar News & CMS",
       description:
-        "A feature-rich chatting application built with React, Redux for state management, and React Router for navigation. Integrated with Firebase for real-time messaging, user authentication, and cloud storage. Supports multiple chat rooms, file sharing, and user presence indicators.",
-      tech: [
-        "React",
-        "Redux",
-        "React Router",
-        "Firebase",
-        "Real-time Database",
-      ],
-      liveUrl: "https://chatapp-black-psi.vercel.app",
-      image:
-        "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop",
+        "A full-stack news management system with a powerful Admin Dashboard. Features Role-Based Access Control, Zod validation, and MongoDB transactions for secure and atomic content management.",
+      tech: ["React", "TypeScript", "Zod", "Node.js", "Express", "MongoDB"],
+      liveUrl: "https://protidinjonotarnews.com",
+      image: dashboard, // ড্যাশবোর্ডের একটি ছবি দিলে আরও ভালো হবে
     },
     {
       title: "ShopHub E-Commerce",
