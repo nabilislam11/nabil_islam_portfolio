@@ -54,7 +54,7 @@ const HeroSection = () => {
               </Button>
               <button>
                 <a
-                  href="https://drive.google.com/file/d/1BsA9gZXFd8AU87saA0d0Q647gRRq2s0z/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1H8FHQY_jrQyBkbZo8dp_XmO1qN-a_pqw/view?usp=sharing"
                   download
                   className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition text-white font-medium"
                 >
