@@ -1,27 +1,27 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, Linkedin, Facebook, Mail, MapPin } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Github, Linkedin, Facebook, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   const socialLinks = [
     {
-      name: 'GitHub',
+      name: "GitHub",
       icon: Github,
-      url: 'https://github.com/nabilislam11',
-      description: 'Check out my latest projects and contributions'
+      url: "https://github.com/nabilislam11",
+      description: "Check out my latest projects and contributions",
     },
     {
-      name: 'LinkedIn',
+      name: "LinkedIn",
       icon: Linkedin,
-      url: 'https://www.linkedin.com/in/nabilislam11',
-      description: 'Connect with me professionally'
+      url: "https://www.linkedin.com/in/nabilislam11",
+      description: "Connect with me professionally",
     },
     {
-      name: 'Facebook',
+      name: "Facebook",
       icon: Facebook,
-      url: 'https://www.facebook.com/nabilislam11/',
-      description: 'Follow my journey and updates'
-    }
+      url: "https://www.facebook.com/nabilislam11/",
+      description: "Follow my journey and updates",
+    },
   ];
 
   return (
@@ -32,7 +32,8 @@ const ContactSection = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+            Ready to bring your ideas to life? Let's discuss your project and
+            create something amazing together.
           </p>
         </div>
 
@@ -42,8 +43,9 @@ const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground mb-6">
-                I'm always open to discussing new opportunities, interesting projects, 
-                or just having a chat about web development. Feel free to reach out!
+                I'm always open to discussing new opportunities, interesting
+                projects, or just having a chat about web development. Feel free
+                to reach out!
               </p>
             </div>
 
@@ -54,7 +56,9 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-muted-foreground">hamjanabil11@gmail.com</p>
+                  <p className="text-muted-foreground">
+                    hamjanabil11@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -80,7 +84,11 @@ const ContactSection = () => {
                     className="border-primary/20 hover:border-primary hover:bg-primary hover:text-primary-foreground"
                     asChild
                   >
-                    <a href={social.url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <social.icon className="w-5 h-5" />
                     </a>
                   </Button>
@@ -92,7 +100,7 @@ const ContactSection = () => {
           {/* Social Links Cards */}
           <div className="space-y-6">
             {socialLinks.map((social, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="group hover:scale-105 transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20"
               >
@@ -105,13 +113,19 @@ const ContactSection = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{social.description}</p>
-                  <Button 
-                    variant="outline" 
+                  <p className="text-muted-foreground mb-4">
+                    {social.description}
+                  </p>
+                  <Button
+                    variant="outline"
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                     asChild
                   >
-                    <a href={social.url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Visit {social.name}
                     </a>
                   </Button>
@@ -123,18 +137,19 @@ const ContactSection = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16 p-8 bg-primary/5 rounded-2xl border border-primary/20">
-          <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <h3 className="text-2xl font-bold mb-4">
+            Ready to Start Your Project?
+          </h3>
           <p className="text-muted-foreground mb-6">
-            Let's turn your vision into reality with modern, responsive web solutions.
+            Let's turn your vision into reality with modern, responsive web
+            solutions.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-primary hover:bg-primary/90 animate-pulse-glow"
             asChild
           >
-            <a href="https://www.linkedin.com/in/nabilislam11" target="_blank" rel="noopener noreferrer">
-              Start a Conversation
-            </a>
+            <a href="mailto:hamjanabil11@gmail.com">Start a Conversation</a>
           </Button>
         </div>
       </div>
