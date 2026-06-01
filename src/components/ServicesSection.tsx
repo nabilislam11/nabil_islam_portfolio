@@ -1,44 +1,48 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Palette, Database, Zap, Globe, Smartphone } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Code, Palette, Database, Zap, Globe, Smartphone } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Code,
-      title: 'Web Development',
-      description: 'Full-stack development using modern technologies like React, Node.js, and MongoDB to build scalable applications.',
-      features: ['Custom Web Applications', 'API Development', 'Database Design']
-    },
-    {
       icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Creating beautiful, intuitive user interfaces with modern design principles and responsive layouts.',
-      features: ['Responsive Design', 'User Experience', 'Modern UI Components']
+      title: "Frontend Development",
+      description:
+        "Building modern, responsive, and user-friendly interfaces using React.js and Tailwind CSS with a focus on performance and accessibility.",
+      features: ["React.js", "Tailwind CSS", "Responsive Design"],
     },
     {
       icon: Database,
-      title: 'Backend Development',
-      description: 'Robust server-side solutions with secure APIs, database optimization, and cloud deployment.',
-      features: ['RESTful APIs', 'Database Management', 'Server Configuration']
+      title: "Backend Development",
+      description:
+        "Developing secure and scalable server-side applications with Node.js, Express.js, and RESTful APIs.",
+      features: ["Node.js", "Express.js", "REST API"],
     },
     {
       icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Optimizing applications for speed, efficiency, and better user experience across all devices.',
-      features: ['Code Optimization', 'Load Time Reduction', 'SEO Enhancement']
+      title: "Database Integration",
+      description:
+        "Designing and integrating databases using MongoDB and Mongoose to efficiently manage and store application data.",
+      features: ["MongoDB", "Mongoose", "CRUD Operations"],
     },
     {
       icon: Globe,
-      title: 'Full-Stack Development',
-      description: 'End-to-end development from frontend interfaces to backend infrastructure and deployment.',
-      features: ['MERN Stack', 'Complete Solutions', 'Deployment & Hosting']
+      title: "Full Stack Applications",
+      description:
+        "Building complete MERN stack applications from frontend interfaces to backend APIs, authentication, and deployment.",
+      features: [
+        "MERN Stack",
+        "Authentication",
+        "API Integration",
+        "Deployment & Hosting",
+      ],
     },
     {
       icon: Smartphone,
-      title: 'Responsive Development',
-      description: 'Mobile-first approach ensuring your application works perfectly on all devices and screen sizes.',
-      features: ['Mobile Optimization', 'Cross-browser Testing', 'Progressive Web Apps']
-    }
+      title: "Responsive Development",
+      description:
+        "Mobile-first approach ensuring your application works perfectly on all devices and screen sizes.",
+      features: ["Mobile Optimization", "Cross-browser Testing"],
+    },
   ];
 
   return (
@@ -52,13 +56,13 @@ const ServicesSection = () => {
             What I <span className="text-gradient">Offer</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive web development services to bring your digital vision to life with modern technologies and best practices.
+            Comprehensive web development services to bring your digital vision
+            to life with modern technologies and best practices.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={index}
               className="group hover:scale-105 transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 h-full"
             >
@@ -69,10 +73,15 @@ const ServicesSection = () => {
                 <CardTitle className="text-xl">{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
-                <p className="text-muted-foreground mb-4">{service.description}</p>
+                <p className="text-muted-foreground mb-4">
+                  {service.description}
+                </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-2 text-sm">
+                    <li
+                      key={featureIndex}
+                      className="flex items-center gap-2 text-sm"
+                    >
                       <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
@@ -82,9 +91,8 @@ const ServicesSection = () => {
             </Card>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
+        CTA Section
+        {/* <div className="text-center mt-16">
           <div className="max-w-2xl mx-auto p-8 bg-primary/5 rounded-2xl border border-primary/20">
             <h3 className="text-2xl font-bold mb-4">Need a Custom Solution?</h3>
             <p className="text-muted-foreground mb-6">
@@ -99,7 +107,7 @@ const ServicesSection = () => {
               Get Started Today
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

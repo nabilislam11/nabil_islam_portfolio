@@ -5,13 +5,14 @@ import developer from "../assets/developer.png";
 const AboutSection = () => {
   const skills = [
     { name: "React.js", level: 95 },
-    { name: "JavaScript ES6+", level: 90 },
-    { name: "Tailwind CSS", level: 95 },
-    { name: "Node.js", level: 85 },
-    { name: "MongoDB", level: 80 },
     { name: "Next.js", level: 85 },
+    { name: "JavaScript (ES6+)", level: 92 },
+    { name: "Node.js", level: 88 },
+    { name: "Express.js", level: 85 },
+    { name: "MongoDB", level: 82 },
+    { name: "Tailwind CSS", level: 95 },
+    { name: "REST API", level: 88 },
   ];
-
   // const stats = [
   //   { number: "15+", label: "Projects Completed" },
   //   { number: "2+", label: "Years Experience" },
@@ -70,14 +71,14 @@ const AboutSection = () => {
                 About Me
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                Crafting Digital Experiences Since{" "}
-                <span className="text-gradient">2025</span>
+                Building Modern Web Applications =
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                I'm a passionate MERN Stack Developer who's deeply committed to
-                bringing ideas to life through thoughtful, user-centered design.
-                Every project I take on is built with care, creativity, and a
-                clear understanding of what the client truly needs.
+                I'm a passionate MERN Stack Developer with hands-on experience
+                building full-stack web applications using React, Node.js,
+                Express.js, and MongoDB. I enjoy learning new technologies,
+                solving problems, and creating responsive user-friendly
+                applications.{" "}
               </p>
               <p className="text-lg text-muted-foreground">
                 What truly drives me is the satisfaction of solving problems and
@@ -122,6 +123,18 @@ const AboutSection = () => {
                 <h4 className="font-semibold mb-2 text-primary">Backend</h4>
                 <p className="text-sm text-muted-foreground">
                   Node.js, Express, MongoDB
+                </p>
+              </div>
+              <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+                <h4 className="font-semibold mb-2 text-primary">Database</h4>
+                <p className="text-sm text-muted-foreground">
+                  MongoDB, Mongoose
+                </p>
+              </div>
+              <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+                <h4 className="font-semibold mb-2 text-primary">Tools</h4>
+                <p className="text-sm text-muted-foreground">
+                  Git, GitHub, Postman, VS Code
                 </p>
               </div>
             </div>

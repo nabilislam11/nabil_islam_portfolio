@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import dashboard from "../assets/dashboard.png";
+import portfolio from "../assets/portfolio.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -26,16 +27,15 @@ const ProjectsSection = () => {
         "A full-stack news management system with a powerful Admin Dashboard. Features Role-Based Access Control, Zod validation, and MongoDB transactions for secure and atomic content management.",
       tech: ["React", "TypeScript", "Zod", "Node.js", "Express", "MongoDB"],
       liveUrl: "https://protidinjonotarnews.com",
-      image: dashboard, // ড্যাশবোর্ডের একটি ছবি দিলে আরও ভালো হবে
+      image: dashboard,
     },
     {
-      title: "ShopHub E-Commerce",
+      title: "Demo Portfolio",
       description:
-        "A modern e-commerce platform with complete shopping functionality and seamless user experience. Features product catalog, shopping cart, and secure checkout process.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      liveUrl: "https://shop-hub-master.vercel.app",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+        "A responsive and interactive developer portfolio designed to highlight my skills, projects, and professional journey. Built with modern web technologies, featuring smooth animations, dark mode, and an optimized user experience across all devices.",
+      tech: ["React", "Tailwind css", "Framer Moton "],
+      liveUrl: "https://demo-portfolio-xi-amber.vercel.app/",
+      image: portfolio,
     },
   ];
 

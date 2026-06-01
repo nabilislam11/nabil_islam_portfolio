@@ -21,14 +21,17 @@ const HeroSection = () => {
             </h1>
 
             <h2 className="text-2xl lg:text-3xl text-muted-foreground mb-6">
-              A Passionate{" "}
-              <span className="text-primary">MERN Stack Developer</span>
+              MERN Stack{" "}
+              <span className="text-primary">
+                Developer & Frontend Enthusiast
+              </span>
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              I build responsive, performance-driven websites and enjoy turning
-              ideas into code. Specializing in modern React applications with
-              beautiful, functional user experiences.
+              I build responsive, scalable, and performance-driven web
+              applications using React, Node.js, Express.js, and MongoDB.
+              Passionate about creating modern user experiences and solving
+              real-world problems through clean, efficient code.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -36,25 +39,13 @@ const HeroSection = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground animate-pulse-glow"
               >
-                <a
-                  target="_blank"
-                  href="https://github.com/nabilislam11?tab=repositories"
-                >
-                  View Projects
-                </a>
+                <a href="#projects">View Projects</a>
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                My Story
-                <User className="ml-2 w-4 h-4" />
-              </Button>
+
               <button>
                 <a
-                  href="https://drive.google.com/file/d/1H8FHQY_jrQyBkbZo8dp_XmO1qN-a_pqw/view?usp=sharing"
+                  href="https://drive.google.com/drive/folders/1TZlYxA1MSI3bw5J-tK6yLjrAKlNTQZhw?usp=sharing"
                   download
                   className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition text-white font-medium"
                 >
